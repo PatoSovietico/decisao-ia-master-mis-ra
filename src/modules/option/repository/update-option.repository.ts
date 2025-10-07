@@ -8,6 +8,6 @@ export class UpdateOptionRepository {
 
     async UpdateOption (id: string, data : UpdateOptionDto){
     const option = await this.prisma.option.update({ where: {id}, data});
-    return Option;
+    return option;
     }
 }
